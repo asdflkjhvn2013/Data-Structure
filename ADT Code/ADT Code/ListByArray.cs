@@ -220,5 +220,15 @@ namespace ADT_Code
             }
             return result;
         }
+
+        public void PrintList()
+        {
+            Console.Write(" List ");
+            for (int i = 0; i < index; i++)
+            {
+                Console.Write(data[i] + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
