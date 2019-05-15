@@ -16,6 +16,25 @@ namespace ADT_Code
             this.front = -1;
             this.rear = -1;
         }
+        public bool EnQueue(int value)
+        {
+            bool result = false;
+            // empty queue
+            if (front == -1)
+            {
+                front = 0;
+                rear = 0;
+                data[front] = value;
+            }
+            else
+            {
+                if ((front + 1) % data.Length == rear)
+                {
+
+                }
+            }
+            return result;
+        }
 
     }
 }
